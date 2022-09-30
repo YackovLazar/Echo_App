@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 
 import com.example.echoapp.databinding.ActivityMainBinding;
+import com.google.android.material.textfield.TextInputLayout;
 
 import android.view.Menu;
 import android.view.MenuItem;
@@ -45,8 +46,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void handleButtonClick()
     {
-        EditText editText = findViewById(R.id.edit);
+        EditText editText = findViewById(R.id.textInputEditText);
         TextView textView = findViewById(R.id.textView);
+        TextInputLayout textInputLayout = findViewById(R.id.textInputLayout);
+        textInputLayout.setHint(editText.getText());
         textView.setText(editText.getText());
     }
 
