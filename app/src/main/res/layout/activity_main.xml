@@ -62,7 +62,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar"
         app:layout_constraintVertical_bias="0.494"
-        android:hint="@string/input_text_hint"
+        android:hint="@string/input_text"
         android:autofillHints="Input text" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
